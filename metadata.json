@@ -1,0 +1,6 @@
+{
+  "name": "AI Supplier Communication & Email Automation System",
+  "description": "Enterprise Accounts Payable, Supplier Communication & Resolution System for Boon Huat Hardware & Supplies Pte Ltd.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

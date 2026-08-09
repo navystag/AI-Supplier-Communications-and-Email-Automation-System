@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Global scrollbar styling for Chrome, Safari, Edge, and Opera */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 9999px;
+  }
+
+  /* Light mode scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+
+  /* Dark mode scrollbar thumb */
+  .dark ::-webkit-scrollbar-thumb,
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #3A4654;
+    border-radius: 9999px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover,
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748B;
+  }
+
+  /* Firefox scrollbar styling */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E1 transparent;
+  }
+
+  html.dark *,
+  .dark * {
+    scrollbar-color: #3A4654 transparent;
+  }
+}
